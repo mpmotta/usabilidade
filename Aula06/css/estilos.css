@@ -1,0 +1,40 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.colunas {
+    font-weight: bold;
+}
+.fotos img{
+    width: 100%;
+}
+.direita img{
+    margin-bottom: 35px;
+}
+.links{
+    text-align: center;
+    color: #999;
+    font-size: 30px;
+}
+.newsletter{
+    background-image: url('../img/News.jpg');
+    background-position: center;
+    padding: 120px 0;
+}
+.subscribe{
+    width: 40%;
+    margin: auto;
+}
+textarea{
+    resize: none;
+}
+.rodape h4{
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+.credits{
+    border-top: solid 1px #999;
+}

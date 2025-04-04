@@ -1,0 +1,40 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.menu a{
+    color: #ff0;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.menu a:hover{
+    color: #eee;
+}
+
+.missao{
+    font-size: 80%;
+}
+
+.produtos{
+    text-align: center;
+}
+
+.produtos h5{
+    color: brown;
+}
+.produtos img{
+    width: 100%;
+}
+.produtos .valor{
+    color: green;
+    font-weight: bold;
+}
+.serv p {
+    margin-top: 15px;
+    font-size: 90%;
+}
+.contato textarea{
+    resize: none;
+}

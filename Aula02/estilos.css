@@ -1,0 +1,16 @@
+textarea{
+    height: 300px;
+    resize: none;
+}
+
+@media screen and (max-width: 960px) {
+    body{
+        background: none !important;
+    }
+    aside{
+        display: none;
+    }
+    iframe{
+        height: 600px;
+    }
+}

@@ -1,0 +1,79 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.topo{
+    background-color: #4b5320;
+}
+.logo img{
+    margin-left: 50px;
+    width: 200px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color:#b8a369;
+}
+.carousel-item{
+    height: 500px;
+}
+.carousel-caption{
+    text-align: left;
+}
+.carousel-caption h2{
+    font-size: 36px;
+}
+.more{
+    color: #fff;
+    background:#4b5320;
+}
+.sub{
+    margin-top: 50px;
+    color:#4b5320;
+}
+.blocos{
+    margin: auto !important;
+}
+.bloco{
+    border-radius: 12px;
+    padding: 60px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.icon{
+    font-size: 60px;
+    color:#4b5320;
+    margin-bottom: 20px;
+}
+.courses{
+    background-color: #F8F9FA;
+}
+.top img{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 240px;
+}
+.meio{
+    text-align: left;
+    color: #fff;
+    background-color: #4b5320;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.legenda{
+    text-align: left;
+    padding: 22px;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+}
+.p1{
+    color:#999;
+}
+.price{
+    text-align: left;
+    font-size: 32px;
+}

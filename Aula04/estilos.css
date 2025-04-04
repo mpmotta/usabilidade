@@ -1,0 +1,12 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.impar{
+    background-color: aqua !important;
+}
+textarea{
+    resize: none;
+}
