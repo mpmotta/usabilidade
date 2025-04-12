@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header h1{
+    font-family: "Permanent Marker", cursive;
+    font-size: 75px;
+}
+.pesquisa{
+    padding-top: 75px;
+}
+.search{
+    width: 400px;
+    background-color: black;
+    border: solid 2px #fc0;
+    color: #fc0;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 6px;
+
+}
+.pesquisar{
+    margin-top: -8px;
+}
+.results{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie {
+    margin: 20px;
+    width: 200px;
+    border: solid 2px #900;
+    background-color: #000;
+}
+.movie img{
+    width: 100%;
+}
+.movie .titulo{
+    color: #fc0;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+.movie a{
+    text-decoration: none;
+}
+.movie .ano{
+    text-align: center;
+    color: #999;
+    margin-top: 5px;
+}
+.flex{
+    display: flex;
+}
+.flexFlow{
+    padding: 0 40px;
+}
+.detalhes h1{
+    color: #fc0;
+    padding: 10px;
+}
+.sinopse{
+    color: #eee;
+    font-size: 28px;
+}
+.nota{
+    color: #090;
+    font-size: 44px;
+    font-weight: bold;
+}
+.diretor{
+    color: #c60;
+    font-size: 32px;
+}

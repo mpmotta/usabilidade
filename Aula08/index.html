@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site App Mobile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="mobile-container">
+        <header class="fixed-top flex">
+            <div class="left">
+                <i class="fa-solid fa-bars menu toggle-menu"></i>
+            </div>
+            <div class="middle">
+                <h1>App Mobile</h1>
+            </div>
+            <div class="right">
+                <button class="btn btn-sm btn-warning modo" id="toggle-mode">Modo</button>
+            </div>
+        </header>
+
+        <div id="side-menu">
+            <p>Menu 1</p>
+            <p>Menu 2</p>
+            <p>Menu 3</p>
+            <p>Menu 4</p>
+            <p>Menu 5</p>
+        </div>
+
+        <section class="main">
+            <article class="artigo">
+                <h2>Artigo 1</h2>
+                <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a
+                    ser o
+                    texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um
+                    texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto
+                    para a
+                    tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a
+                    disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais
+                    recentemente
+                    com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+            </article>
+            <article class="artigo">
+                <h2>Artigo 2</h2>
+                <p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando
+                    analisa a
+                    sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de
+                    letras,
+                    ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. Muitas ferramentas
+                    de
+                    publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum como o modelo de
+                    texto
+                    usado por omissão, e uma pesquisa por "lorem ipsum" irá encontrar muitos websites ainda na sua
+                    infância.
+                    Várias versões têm evoluído ao longo dos anos, por vezes por acidente, por vezes propositadamente
+                    (como
+                    no caso do humor).</p>
+            </article>
+            <article class="artigo">
+                <h2>Artigo 3</h2>
+                <p>Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu
+                    alterações de
+                    alguma forma, pela injecção de humor, ou de palavras aleatórias que nem sequer parecem
+                    suficientemente
+                    credíveis. Se vai usar uma passagem do Lorem Ipsum, deve ter a certeza que não contém nada de
+                    embaraçoso
+                    escondido no meio do texto. Todos os geradores de Lorem Ipsum na Internet acabam por repetir porções
+                    de
+                    texto pré-definido, como necessário, fazendo com que este seja o primeiro verdadeiro gerador na
+                    Internet. Usa um dicionário de 200 palavras em Latim, combinado com uma dúzia de modelos de frases,
+                    para
+                    gerar Lorem Ipsum que pareçam razoáveis. Desta forma, o Lorem Ipsum gerado é sempre livre de
+                    repetição,
+                    ou de injecção humorística, etc.</p>
+            </article>
+        </section>
+        <footer class="fixed-bottom flex">
+            <div class="coluna">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="coluna">
+                <i class="fa-solid fa-cube"></i>
+            </div>
+            <div class="coluna">
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+            <div class="coluna">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="coluna">
+                <i class="fa-solid fa-bars toggle-menu"></i>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle-mode").on("click", function () {
+                $("body").toggleClass("dark-mode");
+                $("header, footer").toggleClass("semi-dark");
+                $(".artigo").toggleClass("line");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".toggle-menu").on("click", function () {
+                const sideMenu = $("#side-menu");
+                const isHidden = sideMenu.css("left") === "-365px";
+
+                if (isHidden) {
+                    sideMenu.css("left", "0");
+                } else {
+                    sideMenu.css("left", "-365px");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

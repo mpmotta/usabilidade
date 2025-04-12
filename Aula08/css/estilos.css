@@ -1,0 +1,74 @@
+.mobile-container{
+    width: 365px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+header, footer{
+    background-color: #fff;
+    width: 365px !important;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.left, .right{
+    flex: 1;
+}
+.middle{
+    flex: 8;
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.menu{
+    font-size: 28px;
+    margin: 10px;
+}
+h1{
+    margin-top: 6px;
+}
+.modo{
+    margin: 10px;
+}
+.coluna{
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+}
+.main{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.artigo{
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px #000;
+    border-radius: 6px;
+}
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+}
+.semi-dark{
+    background-color: #444;
+    color: #eee;
+}
+.line{
+    border: solid 1px #fff;
+}
+
+#side-menu {
+    position: fixed;
+    top: 40px;
+    left: -365px; 
+    width: 365px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    transition: left 0.3s ease-in-out; 
+}
+
+
