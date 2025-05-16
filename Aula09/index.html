@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="jukebox">
+        <header class="header text-center">JUKEBOX</header>
+        <div class="display" id="tocando">
+     
+        </div>
+        <div class="playlist">
+            <form id="formMusicas">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <input type="text" id="musica" class="form-control"
+                        placeholer="Nome da música">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="submit" value="Adicionar Música"
+                        class="btn btn-warning form-control">
+                    </div>
+                </div>
+            </form>
+                <div class="row">
+                    <div class="col-sm-8">
+
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="submit" id="tocarMusica"
+                        value="Tocar Música"
+                        class="btn btn-success mt-3 form-control">
+                    </div>
+                </div>
+            <div>
+                <h2 class="text-success my-3">LISTA DE MÚSICAS:</h2>
+                <div class="lista text-warning">
+                    <ol id="listaMusicas"></ol>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            Jukebox 1.0 - 2025 - UniRitter
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

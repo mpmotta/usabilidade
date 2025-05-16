@@ -3,7 +3,10 @@
     margin: auto;
     overflow-x: hidden;
 }
-
+.oculto{
+    display: none;
+    color: red;
+}
 header, footer{
     background-color: #fff;
     width: 365px !important;
