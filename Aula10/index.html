@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="jukebox">
+        <header class="header text-center">JUKEBOX</header>
+        <div class="main">
+            <div class="display" id="tocando"></div>
+            <div class="playlist">
+                <div class="row mb-2">
+                    <div class="col-sm-8">
+                        <input type="text" id="codigoMusica" class="form-control"
+                        maxlength="4" autocomplete="off">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="button" id="btnPesquisar"
+                        value="Buscar Música"
+                        class="btn btn-secondary form-control">
+
+                        <input type="button" id="sortearMusica"
+                        value="Sortear Música" 
+                        class="btn btn-danger form-control mt-2">
+                    </div>
+                </div>
+                <form id="formMusicas">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input disabled type="text" id="musica" class="form-control">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="submit" value="Adicionar Música"
+                            class="btn btn-warning form-control">
+                        </div>
+                    </div>
+                </form>
+                    <div class="row">
+                        <div class="col-sm-8">
+
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="submit" id="tocarMusica"
+                            value="Tocar Música"
+                            class="btn btn-success mt-3 form-control">
+                        </div>
+                    </div>
+                <div>
+                    <h2 class="text-success my-3">LISTA DE MÚSICAS:</h2>
+                    <div class="lista text-warning">
+                        <ol id="listaMusicas"></ol>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                Jukebox 2.0 - 2025 - UniRitter
+            </footer>
+        </div>    
+    </div>
+    <script src="js/musicas.js"></script>
+    <script src="js/jukebox.js"></script>
+</body>
+</html>
